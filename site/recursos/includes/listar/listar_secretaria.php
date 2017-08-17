@@ -5,7 +5,7 @@ include_once '../funcoes/function_andar.php';
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Arrecadação</title>
+        <title>Controle Acesso</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script>

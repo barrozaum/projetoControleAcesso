@@ -1,6 +1,7 @@
 <?php
 session_start();
 session_destroy();
+date_default_timezone_set('America/Sao_Paulo');
 
 // SABER SE É MANHÃ TARDE OU NOITE
 $hora = date('H');

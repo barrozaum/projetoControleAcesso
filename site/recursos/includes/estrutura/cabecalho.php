@@ -30,9 +30,19 @@ include_once './controle/validar_secao.php';
                     <div class="collapse navbar-collapse navbar-ex1-collapse ">
                         <ul class="nav navbar-nav ">
 
+                            <?php 
+                            if($_SESSION['PERFIL_USUARIO'] === "ADMINISTRADOR"){
+                            ?>
                             <li class="dropdown"><a href="cadastro_secretaria.php" >SECRETARIA</a></li>
                             <li class="dropdown"><a href="cadastro_usuario.php" >USUARIO</a></li>
+                            <li class="root">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">CONSULTA <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="consulta_data.php">DATA</a></li>
+                                </ul>
 
+                            </li>
+                            <?php } ?>
                             <li class="dropdown"><a href="logout.php" >SAIR</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->

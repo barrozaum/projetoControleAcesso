@@ -13,6 +13,7 @@ function fun_validar_login($pdo, $login, $senha) {
             $query_login_senha->execute();
             $dados = $query_login_senha->fetch();
             $_SESSION['LOGADO'] = "S";
+            $_SESSION['PERFIL_USUARIO'] = $dados['perfil'];
             $pdo = null;
             return "conectado";
         } else {

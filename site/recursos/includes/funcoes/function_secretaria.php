@@ -71,3 +71,12 @@ function listar_secretarias_por_andar($cod) {
     $pdo=null;
     print $saida;
 }
+
+
+function findDescription($pdo, $cod){
+     $sql = "select * FROM secretaria WHERE ativo = 0 order  by id_secretaria";
+    $query = $pdo->prepare($sql);
+    $query->execute();
+    $dados = $query->fetch();
+    return $dados['descricao_secretaria'];
+}
