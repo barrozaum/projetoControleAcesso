@@ -1,7 +1,7 @@
 <?php
 
 try {
-    $Localizacao_Banco = "BARROZO\SQLEXPRESS";
+    $Localizacao_Banco = "BARROZAUM\SQLEXPRESS";
     $nome_Base_Dados = "CODENI_CONTROLE_ACESSO";
     $usuario_Banco = 'sa';
     $senha_Banco = '123';

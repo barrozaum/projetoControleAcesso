@@ -10,8 +10,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         include_once '../funcoes/funcaoData.php';
         include_once '../estrutura/conexao/conexao.php';
 
-        $data_visita = dataAmericano(date('d/m/y'));
+        $data_visita = dataAmericano(date('d/m/Y'));
         $hora_visita = date('H:i:s');
+        
         
 
         if (isset($_POST['txt_nome_completo'])) {
